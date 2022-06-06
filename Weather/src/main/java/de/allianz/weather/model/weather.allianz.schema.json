@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Weather",
+  "type": "object",
+  "properties": {
+    "condition": {
+      "type": "string",
+      "description": "The description of the weather. eg: scattered clouds."
+    },
+    "temperature": {
+      "type": "number",
+      "description": "The actual temperature of the city in celsius."
+    },
+    "wind_speed": {
+      "type": "number",
+      "description": "Speed of the wind in km/h.",
+      "minimum": 0
+    }
+  }
+}
